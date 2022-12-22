@@ -1,0 +1,4 @@
+#Escribir numeros pares hasta el 1000
+print("Estos son los numeros pares que no sean mayor a 25")
+for pares in range(2,25, 2) :
+    print("-",pares)
