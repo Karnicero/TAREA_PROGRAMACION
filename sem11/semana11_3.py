@@ -1,23 +1,20 @@
-"""
-Diseña un algoritmo en el que se ingrese 2 digitos para multiplicarlos
-y el programa los contabilice y los acumule usando el while.
-"""
-#declaracion de variables
-acu = 0 
-cont = 0
-multiplicación = 0
-#entrada
-#proceso
-#salida
-rpt = "si"
-while (rpt != "no"):
-    num1 = int (input ("ingrese el primer digito: "))
-    num2 = int (input ("ingrese el segundo digito: "))
-    acu = acu + num1 + num2
-    cont = cont + 2
-    multiplicación = num1 * num2
-    print ("La multiplicacion es: ", multiplicación)
-    print("La acumulación de la multiplicación es de: " , acu)
-    print("Contador de cuantos digitos ingresó: ", cont)
+print("El alumno procedera a poner sus notas de IO, PC, EM, EB, el programa arrojara si aprobó o desaprobó")
+numero1 = float(input("Coloque la nota de IO...... "))
+while numero1<0 or numero1>20:
+    print("NOTA NO VALIDA")
+    numero1 = float(input("Coloque la nota de IO...... "))
+numero2 = float(input("Coloque la nota de PC...... "))
+while numero2<0 or numero2>20:
+    print("NOTA NO VALIDA")
+    numero2 = float(input("Coloque la nota de PC...... "))
+numero3 = float(input("Coloque la nota de EM...... "))
+while numero3<0 or numero3>20:
+    print("NOTA NO VALIDA")
+    numero3 = float(input("Coloque la nota de EM...... "))
+numero4 = float(input("Coloque la nota de EB...... "))
+while numero4<0 or numero4>20:
+    print("NOTA NO VALIDA")
+    numero4 = float(input("Coloque la nota de EB...... "))
 
-    rpt = str (input ("Desea realizar otra resta? si/no : "))
+PROMEDIO = (numero1+numero2+numero3+numero4)/4
+print("Su promedio final es: ",PROMEDIO )
